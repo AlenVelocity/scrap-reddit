@@ -1,0 +1,38 @@
+{
+  "name": "reddit-fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*",
+    "tests/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "node tests",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "reddit",
+    "reddit-scrapper",
+    "reddit-api"
+  ],
+  "author": {
+    "name": "Alen Yohannan",
+    "url": "https://github.com/Alensaito1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "@types/node": "^14.14.37",
+    "eslint": "^7.23.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  }
+}
